@@ -1,18 +1,310 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+   <RelativeLayout
+       android:id="@+id/rl_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/tarffic"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Traffic Single"
+           tools:ignore="MissingConstraints"
+           android:layout_marginTop="20dp"
+           android:layout_marginStart="50dp"
+           android:gravity="center"
+           android:textStyle="bold"
+           android:textSize="20dp"
+           android:layout_alignParentStart="true"
+           android:textColor="@color/black"/>
+          <ImageView
+              android:layout_width="20dp"
+              android:layout_height="20dp"
+              android:src="@color/black"
+              android:layout_alignParentEnd="true"
+              android:layout_centerInParent="true"
+              android:layout_marginEnd="30dp"/>
+   </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="80dp"
+    android:layout_below="@+id/rl_layout">
+    <LinearLayout
+        android:id="@+id/ll_A"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello    Worldddccccccccccccccccccxxddddddd!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:gravity="center">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Amb_A"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:hint="Password"
+            app:cardCornerRadius="5dp"
+            android:padding="15dp"
+            app:cardElevation="50dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="AMB"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:hint="Password"
+            app:cardCornerRadius="5dp"
+            android:padding="15dp"
+            app:cardElevation="50dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="A"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_below="@+id/ll_A">
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:text="10"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp">
+
+        </TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:hint="Password"
+            app:cardCornerRadius="5dp"
+            android:padding="15dp"
+            app:cardElevation="50dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+
+            >
+            <TextView
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="B"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/B_AMB"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:hint="Password"
+            app:cardCornerRadius="5dp"
+            android:padding="15dp"
+            app:cardElevation="50dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="AMB"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_A"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/D_ABM"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:padding="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="50dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="AMB"
+                android:textColor="@color/black"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:padding="15dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="50dp">
+
+            <TextView
+                android:id="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="D"
+                android:textColor="@color/black"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/LL_d">
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="10"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp">
+
+        </TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:hint="Password"
+            app:cardCornerRadius="5dp"
+            android:padding="15dp"
+            app:cardElevation="50dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+
+            >
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="C"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/C_AMB"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:hint="Password"
+            app:cardCornerRadius="5dp"
+            android:padding="15dp"
+            app:cardElevation="50dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="AMB"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="15dp">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>
+</layout>
+
