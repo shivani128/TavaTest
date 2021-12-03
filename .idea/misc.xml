@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/A/Desktop/test_tavasoft/TavaTest/app/src/main/res/drawable/border.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/A/Desktop/test_tavasoft/TavaTest/app/src/main/res/layout/activity_demo_list.xml" value="0.1921875" />
         <entry key="..\:/Users/A/Desktop/test_tavasoft/TavaTest/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/A/Desktop/test_tavasoft/TavaTest/app/src/main/res/layout/card_item.xml" value="0.1" />
+        <entry key="..\:/Users/A/Desktop/test_tavasoft/TavaTest/app/src/main/res/layout/single_item_list.xml" value="0.178125" />
       </map>
     </option>
   </component>
